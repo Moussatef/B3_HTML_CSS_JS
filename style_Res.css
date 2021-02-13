@@ -20,7 +20,7 @@
 .TB_info td{
     padding: 20px 14px;
 }
-.TB_info td input{
+.TB_info td input , .TB_info td select{
     height: 28px;
     width: 250px;
     border-radius: 20px;
