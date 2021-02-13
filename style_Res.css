@@ -1,0 +1,30 @@
+
+.contaner_card{
+    width: 900px;
+    margin: 8% auto 0;
+    border: solid 1px #707070;
+    -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
+    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.TB_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.TB_info td{
+    padding: 20px 14px;
+}
+.TB_info td input{
+    height: 28px;
+    width: 250px;
+    border-radius: 20px;
+    border: solid 1px #707070;
+    -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
+    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+}
