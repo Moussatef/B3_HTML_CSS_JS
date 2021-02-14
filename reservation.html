@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_Res.css">
     <title>Reservation</title>
+   
 </head>
 <body>
     
@@ -24,22 +25,24 @@
                         <td><input type="email" placeholder="Email"></td>
                         <td><label>type du véhicule : </label></td>
                         <td>
-                            <select id="vehicule">
+                            <select id="vehicule" onchange="check_type_v()">
+                                <option value="-Votre choix-">-Votre choix-</option>
                                 <option value="Motos">Motos</option>
-                                <option value="Motos">Citadine</option>
-                                <option value="Motos">Compact</option>
-                                <option value="Motos">Berline</option>
-                                <option value="Motos">Utilitare</option>
-                                <option value="Motos">Engin de chantier</option>
-                                <option value="Motos">Camion</option>
+                                <option value="Citadine">Citadine</option>
+                                <option value="Compact">Compact</option>
+                                <option value="Berline">Berline</option>
+                                <option value="Utilitare">Utilitare</option>
+                                <option value="Engin">Engin de chantier</option>
+                                <option value="Camion">Camion</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td><label>carburant : </label></td>
                         <td>
-                            <select id="carbur">
-                                <option value="-Votre choix-">-Votre choix-</option>
+                            <select id="carbur"  >
+                                <option value="-Votre choix-" >-Votre choix-</option>
+                                
                             </select>
                     
                         </td>
@@ -64,6 +67,29 @@
             </form>
         </div>
     </div>
+    <script src="res.js"></script>
+    <!-- <script>
+        function get_veh()
+                {
+                    var veh=document.getElementById("vehicule").value;
+                    if(veh==="Motos")
+                    {
+                        var arr=["Maharashtra","Delhi"];
+                    }
+                    else if(a==="USA")
+                    {
+                        var arr=["Washington","Texas","New York"];
+                    }
+    
+                    var string="";
+    
+                    for(i=0;i<arr.length;i++)
+                    {
+                        string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+                    }
+                    document.getElementById("carbur").innerHTML=string;
+                }
+    </script> -->
 
 </body>
 </html>
