@@ -3,10 +3,10 @@ let boite = ["Manuelle", "Automatique"];
 // var type_V = document.querySelector(".vehicule").value;
 let select_carbu = document.getElementById("carbur");
 let select_boit  = document.getElementById("boit");
-let prix_pors    = 0 ;
-let prix_voit    = 0 ;
-let pors_carbu   = 0 ;
-let pors_boit    = 0 ;
+var prix_pors    ;
+var prix_voit    ;
+var pors_carbu   ;
+var pors_boit    ;
 
 
 function check_type_v() {
@@ -75,18 +75,24 @@ function check_type_v() {
 }
 
 function check_carbu(){
-     switch(select_carbu){
-         case "Electrique" : pors_carbu = 0.05; break
-         case "Hybride" : pors_carbu = 0.09; break
-         case "Essence" : pors_carbu = 0.14; break
-         case "Diesel" : pors_carbu = 0.21; break
+     switch(select_carbu.value){
+         case "Electrique" : pors_carbu = 0.05;
+          break;
+         case "Hybride" : pors_carbu = 0.09;
+          break;
+         case "Essence" : pors_carbu = 0.14;
+          break;
+         case "Diesel" : pors_carbu = 0.21; 
+          break;
          default: pors_carbu = 0;
      }
 }
 function check_boit(){
-    switch(select_boit){
-        case "Manuelle" : pors_boit = 0; break
-        case "Automatique" : pors_boit = 0.19; break
+    switch(select_boit.value){
+        case "Manuelle" : pors_boit = 0;
+        break;
+        case "Automatique" : pors_boit = 0.19;
+        break;
         default: pors_boit = 0;
     }
 }
@@ -97,12 +103,15 @@ function getduri(){
     // alert(date_Dep +"     <<<>>>  "+ date_Dep);
 
     let deffDate = new Date(date_Fin) - new Date(date_Dep);
-    const diffInDays = deffDate / (1000 * 60 * 60 * 24);
-    alert( diffInDays +"<>"+ prix_voit +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
+    let diffInDays = deffDate / (1000 * 60 * 60 * 24);
+
+    // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
+
+    // alert("  durée de réservation (en jours) est :  "+ diffInDays );
+
+    prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
     
-    prix_pors = diffInDay * (prix_voit + (prix_voit*pors_carbu) + (prix_voit*pors_boit));
-    
-    alert("  durée de réservation (en jours) est :  "+ diffInDays );
+    alert("  prix total est :  "+ prix_pors +"€");
 
 
 }
