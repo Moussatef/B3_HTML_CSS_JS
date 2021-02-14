@@ -15,7 +15,12 @@ function check_type_v(){
         for(let i=0;i<4;i++){
             select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
         }
-        
+        select_boit .innerHTML = `<option value="${boite[0]}">${boite[0]} </option>`;
+        break;
+        case "Compact" : 
+        for(let i=1;i<4;i++){
+            select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
+        }
         select_boit .innerHTML = `<option value="${boite[0]}">${boite[0]} </option>`;
         break;
 
