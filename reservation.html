@@ -40,7 +40,7 @@
                     <tr>
                         <td><label>carburant : </label></td>
                         <td>
-                            <select id="carbur"  >
+                            <select id="carbur" onchange="check_carbu()" >
                                 <option value="-Votre choix-" >-Votre choix-</option>
 
                             </select>
@@ -48,22 +48,22 @@
                         </td>
                         <td><label>boite à vitesse : </label></td>
                         <td>
-                            <select id="boit">
+                            <select id="boit"  onchange="check_boit()">
                                 <option value="-Votre choix-">-Votre choix-</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td><label >From : </label></td>
-                        <td><input type="date" placeholder=""></td>
+                        <td><input type="date" id="dateDep" placeholder=""></td>
                         <td><label >to : </label></td>
-                        <td><input type="date" placeholder=""></td>
+                        <td><input type="date" id="dateFin" placeholder=""></td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><input type="button" id="valider" value="Valider"></td>
+                        <td><input type="button" id="valider" onclick="getduri()" value="Valider"></td>
                     </tr>
                 </table>
             </form>
