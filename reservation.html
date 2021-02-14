@@ -1,97 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_Res.css">
     <title>Reservation</title>
-   
+
 </head>
+
 <body>
-    
+
     <div class="contaner_card">
-        <div class="info">
-            <form >
-                <table class="TB_info">
-                    <tr>
-                        <td><label >Nom Et Prenom : </label></td>
-                        <td><input id="Nom" type="text" placeholder="Nom Et Prenom"></td>
-                        <td> <label > Idantitie National : </label></td>
-                        <td><input type="text" id="cin" placeholder="CIN"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Email : </label></td>
-                        <td><input type="email" id="email" placeholder="Email"></td>
-                        <td><label>type du véhicule : </label></td>
-                        <td>
-                            <select id="vehicule" onchange="check_type_v()">
-                                <option value="-Votre choix-">-Votre choix-</option>
-                                <option value="Motos">Motos</option>
-                                <option value="Citadine">Citadine</option>
-                                <option value="Compact">Compact</option>
-                                <option value="Berline">Berline</option>
-                                <option value="Utilitare">Utilitare</option>
-                                <option value="Engin">Engin de chantier</option>
-                                <option value="Camion">Camion</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>carburant : </label></td>
-                        <td>
-                            <select id="carbur" onchange="check_carbu()" >
-                                <option value="-Votre choix-" >-Votre choix-</option>
 
-                            </select>
-                    
-                        </td>
-                        <td><label>boite à vitesse : </label></td>
-                        <td>
-                            <select id="boit"  onchange="check_boit()">
-                                <option value="-Votre choix-">-Votre choix-</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label >From : </label></td>
-                        <td><input type="date" id="dateDep" placeholder=""></td>
-                        <td><label >to : </label></td>
-                        <td><input type="date" id="dateFin" placeholder=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="button" id="valider" onclick="getduri()" value="Valider"></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
+       <div class="atrubit">
+        <label>Nom Et Prenom : </label>
+        <input id="Nom" type="text" placeholder="Nom Et Prenom">
+       </div>
+       <div class="atrubit">
+        <label> Idantitie National : </label>
+        <input type="text" id="cin" placeholder="CIN">
+       </div>
+       <div class="atrubit">
+        <label>Email : </label>
+        <input type="email" id="email" placeholder="Email">
+       </div>
+        
+        
+        <label>type du véhicule : </label>
+        <select id="vehicule" onchange="check_type_v()">
+            <option value="-Votre choix-">-Votre choix-</option>
+            <option value="Motos">Motos</option>
+            <option value="Citadine">Citadine</option>
+            <option value="Compact">Compact</option>
+            <option value="Berline">Berline</option>
+            <option value="Utilitare">Utilitare</option>
+            <option value="Engin">Engin de chantier</option>
+            <option value="Camion">Camion</option>
+        </select>
+        </select>
+        <label>carburant : </label>
+        <select id="carbur" onchange="check_carbu()">
+            <option value="-Votre choix-">-Votre choix-</option>
+        </select>
+        <label>boite à vitesse : </label>
+        <select id="boit" onchange="check_boit()">
+            <option value="-Votre choix-">-Votre choix-</option>
+        </select>
+        <label>From : </label>
+        <input type="date" id="dateDep" placeholder="">
+        <label>to : </label></td>
+        <input type="date" id="dateFin" placeholder="">
+        <input type="button" id="valider" value="Valider">
+
     </div>
-    <script src="res.js"></script>
-    <!-- <script>
-        function get_veh()
-                {
-                    var veh=document.getElementById("vehicule").value;
-                    if(veh==="Motos")
-                    {
-                        var arr=["Maharashtra","Delhi"];
-                    }
-                    else if(a==="USA")
-                    {
-                        var arr=["Washington","Texas","New York"];
-                    }
-    
-                    var string="";
-    
-                    for(i=0;i<arr.length;i++)
-                    {
-                        string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
-                    }
-                    document.getElementById("carbur").innerHTML=string;
-                }
-    </script> -->
 
+
+
+    <script src="res.js"></script>
 </body>
+
 </html>

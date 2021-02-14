@@ -46,11 +46,8 @@ function check_type_v() {
             
             break;
         case "Utilitare":
-
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
-
             select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
-            
             prix_voit=16;
             break;
         case "Engin":
@@ -100,18 +97,19 @@ function check_boit(){
 function getduri(){
     let date_Dep = document.getElementById("dateDep").value;
     let date_Fin = document.getElementById("dateFin").value;
+    let Nom = document.getElementById("Nom").value;
+    let email = document.getElementById("email").value;
+    let CIN =document.getElementById("cin").value;
+    let typeca =  document.getElementById("vehicule").value;
     // alert(date_Dep +"     <<<>>>  "+ date_Dep);
-
     let deffDate = new Date(date_Fin) - new Date(date_Dep);
     let diffInDays = deffDate / (1000 * 60 * 60 * 24);
-
     // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
-
-    
     prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
-    alert( "  durée de réservation (en jours) est :  "+ diffInDays+"\n  prix total est :  "+ prix_pors +"€");
+    alert("Nom Et Prenom : " +Nom+"\nCIN : "+CIN+"\nEmail : "+email);
+    alert("Type du véhicule : "+typeca+"\ncarburant : " +select_carbu.value + "\nboite à vitesse : " + select_boit.value + "\ndurée de réservation (en jours) est :  "+ diffInDays+"\nprix total est :  "+ prix_pors +"€");
 }
 
 select_carbu.addEventListener("change",check_carbu);
 select_boit.addEventListener("change",check_boit);
-// document.getElementById("valider").addEventListener("click",getduri);
+document.getElementById("valider").addEventListener("click",getduri);

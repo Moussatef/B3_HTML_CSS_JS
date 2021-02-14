@@ -1,26 +1,33 @@
 
 .contaner_card{
-    width: 900px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr ;
+    grid-template-rows: 25% 100px auto;
     margin: 8% auto 0;
     border: solid 1px #707070;
     -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
     box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
 }
-
-.info{
+.atrubit{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
+    justify-content: space-around;
 
 }
-.TB_info{
-    display: flex;
-    flex-wrap: wrap;
+.TB_info .card_data {
+  
+    
 }
-.TB_info td{
-    padding: 20px 14px;
+
+.TB_info div{
+    margin: 20px;
+
+    width: 250px;
+    height: 10px;
+    
 }
-.TB_info td input , .TB_info td select{
+.TB_info  input , .TB_info  select{
     height: 28px;
     width: 250px;
     border-radius: 20px;
