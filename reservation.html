@@ -11,49 +11,73 @@
 </head>
 
 <body>
-
     <div class="contaner_card">
+        <div class="atrubit">
+            <label>Nom Et Prenom : </label>
+        </div>
+        <div class="atrubit">
+            
+            <input id="Nom" type="text" placeholder="Nom Et Prenom">
+        </div>
+        <div class="atrubit">
+            <label> Idantitie National : </label>
+        </div>
+        <div class="atrubit">
+            <input type="text" id="cin" placeholder="CIN">
+        </div>
 
-       <div class="atrubit">
-        <label>Nom Et Prenom : </label>
-        <input id="Nom" type="text" placeholder="Nom Et Prenom">
-       </div>
-       <div class="atrubit">
-        <label> Idantitie National : </label>
-        <input type="text" id="cin" placeholder="CIN">
-       </div>
-       <div class="atrubit">
-        <label>Email : </label>
-        <input type="email" id="email" placeholder="Email">
-       </div>
-        
-        
-        <label>type du véhicule : </label>
-        <select id="vehicule" onchange="check_type_v()">
-            <option value="-Votre choix-">-Votre choix-</option>
-            <option value="Motos">Motos</option>
-            <option value="Citadine">Citadine</option>
-            <option value="Compact">Compact</option>
-            <option value="Berline">Berline</option>
-            <option value="Utilitare">Utilitare</option>
-            <option value="Engin">Engin de chantier</option>
-            <option value="Camion">Camion</option>
-        </select>
-        </select>
-        <label>carburant : </label>
-        <select id="carbur" onchange="check_carbu()">
-            <option value="-Votre choix-">-Votre choix-</option>
-        </select>
-        <label>boite à vitesse : </label>
-        <select id="boit" onchange="check_boit()">
-            <option value="-Votre choix-">-Votre choix-</option>
-        </select>
-        <label>From : </label>
-        <input type="date" id="dateDep" placeholder="">
-        <label>to : </label></td>
-        <input type="date" id="dateFin" placeholder="">
-        <input type="button" id="valider" value="Valider">
 
+        <div class="atrubit"><label>Email : </label></div>
+        <div class="atrubit">
+            <input type="email" id="email" placeholder="Email">
+        </div>
+        <div class="atrubit"><label>type du véhicule : </label></div>
+        <div class="atrubit">
+            <select id="vehicule" onchange="check_type_v()">
+                <option value="-Votre choix-">-Votre choix-</option>
+                <option value="Motos">Motos</option>
+                <option value="Citadine">Citadine</option>
+                <option value="Compact">Compact</option>
+                <option value="Berline">Berline</option>
+                <option value="Utilitare">Utilitare</option>
+                <option value="Engin">Engin de chantier</option>
+                <option value="Camion">Camion</option>
+            </select>
+
+        </div>
+        <div class="atrubit"><label>carburant : </label></div>
+        <div class="atrubit">
+            <select id="carbur" onchange="check_carbu()">
+                <option value="-Votre choix-">-Votre choix-</option>
+            </select>
+
+        </div>
+        <div class="atrubit">
+            <label>boite à vitesse : </label>
+        </div>
+        <div class="atrubit">
+            
+            <select id="boit" onchange="check_boit()">
+                <option value="-Votre choix-">-Votre choix-</option>
+            </select>
+
+        </div>
+        <div class="atrubit">
+            <label>From : </label>
+        </div>
+        <div class="atrubit">
+            
+            <input type="date" id="dateDep" placeholder="">
+        </div>
+        <div class="atrubit">
+            <label>to : </label>
+            <input type="date" id="dateFin" placeholder="">
+        </div>
+
+        <div class="atrubit">
+            <input type="button" id="valider" value="Valider">
+
+        </div>
     </div>
 
 
