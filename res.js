@@ -12,7 +12,7 @@ function check_type_v(){
         case "Motos" :
             select_carbu.innerHTML =choix;    
             select_carbu.innerHTML += `<option value="${carburant[0]}">${carburant[0]} </option> <option value="${carburant[2]}">${carburant[2]}</option>"`;
-                       
+            select_boit .innerHTML = `<option value="None">None</option>`;
         break
         case "Citadine" : 
         select_carbu.innerHTML =choix;
@@ -52,8 +52,7 @@ function check_type_v(){
         select_carbu.innerHTML = choix+`<option value="${carburant[3]}">${carburant[3]} </option>`;
         select_boit .innerHTML = choix+ `<option value="${boite[1]}">${boite[1]} </option>`;
         break;
-
-
+        
         default:
             select_carbu.innerHTML = choix;
 
