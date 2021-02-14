@@ -107,15 +107,11 @@ function getduri(){
 
     // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
 
-    // alert("  durée de réservation (en jours) est :  "+ diffInDays );
-
-    prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
     
-    alert("  prix total est :  "+ prix_pors +"€");
-
-
+    prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
+    alert( "  durée de réservation (en jours) est :  "+ diffInDays+"\n  prix total est :  "+ prix_pors +"€");
 }
 
 select_carbu.addEventListener("change",check_carbu);
 select_boit.addEventListener("change",check_boit);
-document.getElementById("valider").addEventListener("click",getduri);
+// document.getElementById("valider").addEventListener("click",getduri);
