@@ -56,15 +56,16 @@ function check_type_v() {
         case "Camion":
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
             select_boit.innerHTML = choix + `<option value="${boite[1]}">${boite[1]} </option>`;
+            prix_pors = 250 + (250*0.40);
             break;
 
         default:
             select_carbu.innerHTML = choix;
 
     }
-
 }
 
 
 check_type_v();
+
 type_V.addEventListener("change", check_type_v);
