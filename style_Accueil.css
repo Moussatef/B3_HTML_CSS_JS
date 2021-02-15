@@ -25,16 +25,22 @@ body{
     margin: 40px;
     text-decoration: none;
 }
-.nav_1 ul li span{
+
+.nav_1 ul li .ress{
     border: solid 2px #017FE8;
     border-radius: 20px;
     padding: 10px 1px 10px 1px;
 }
-.nav_1 ul li span:hover {
+.nav_1 ul li .ress:hover {
     background: #017FE8;
     border: solid 2px #fafafa;
-    
-
+}
+.nav_1 ul li .spn:hover{
+    border: solid 2px #017FE8;
+    border-radius: 20px;
+    padding: 10px 1px 10px 1px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .nav_1  img{
     margin-top: 20px;
