@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav_1{
+    margin-left: 10%;
+}
+
+.nav_1 ul {
+    margin-top: 1.5%;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    
+
+}
+.nav_1 ul title{
+    
+
+}
+.nav_1 ul li .active a{
+    color: #017FE8;
+
+}
+.nav_1 ul li a{
+    color: rgb(255, 255, 255);
+    margin: 40px;
+    text-decoration: none;
+}
+.title_hero{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin: 10% 1% 1% 11%;
+}
+.title_hero h1{
+    font-size: 60px;
+}
+
+
+
+.nav_1 img{
+    margin-top: 20px;
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    
+}
