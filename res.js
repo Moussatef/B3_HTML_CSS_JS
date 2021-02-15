@@ -83,13 +83,10 @@ function check_carbu() {
     }
 }
 function check_boit() {
-    switch (select_boit.value) {
-        case "Manuelle": pors_boit = 0;
-            break;
-        case "Automatique": pors_boit = 0.19;
-            break;
-        default: pors_boit = 0;
-    }
+    if (select_boit.value=="Automatique") 
+        pors_boit = 0.19;
+        else pors_boit = 0;
+   
 }
 
 function getduri() {
