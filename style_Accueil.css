@@ -26,9 +26,15 @@ body{
     text-decoration: none;
 }
 .nav_1 ul li span{
-    border: solid 1.5px #017FE8;
+    border: solid 2px #017FE8;
     border-radius: 20px;
     padding: 10px 1px 10px 1px;
+}
+.nav_1 ul li span:hover {
+    background: #017FE8;
+    border: solid 2px #fafafa;
+    
+
 }
 .nav_1  img{
     margin-top: 20px;
