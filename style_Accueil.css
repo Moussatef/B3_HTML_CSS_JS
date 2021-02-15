@@ -4,15 +4,23 @@ body {
 }
 
 
-.nav_1{
-    margin-left: 10%;
+.nav_bar_div .nav_1{
+    padding-left: 10%;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: 100000;
 }
 
 .nav_1 ul {
     margin-top: 1.5%;
     display: flex;
     list-style: none;
-    position: absolute;
+    position: relative;
+    position: fixed;
+   
     
 
 }
@@ -24,23 +32,25 @@ body {
     color: rgb(255, 255, 255);
     margin: 40px;
     text-decoration: none;
+    transition: 800ms;
 }
 
-.nav_1 ul li .ress{
-    border: solid 2px #017FE8;
+.nav_1 ul .ress{
+    padding-bottom: 3px;
+    border-bottom: solid 2px #017FE8;
     border-radius: 20px;
-    padding: 10px 1px 10px 1px;
+    transition: 800ms;
 }
-.nav_1 ul li .ress:hover {
-    background: #017FE8;
-    border: solid 2px #fafafa;
+.nav_1 ul  .ress:hover {
+    transition: 800ms;
+    border-bottom: solid 2px #ffffff;
+    padding-bottom: 3px;
 }
-.nav_1 ul li .spn:hover{
-    border: solid 2px #017FE8;
+.nav_1 ul .title:hover{
+    border-bottom: solid 2px #ffffff;
     border-radius: 20px;
-    padding: 10px 1px 10px 1px;
-    margin-right: 5px;
-    margin-left: 5px;
+    padding-bottom: 3px;
+    transition: 800ms;
 }
 .nav_1  img{
     margin-top: 20px;
@@ -53,8 +63,8 @@ body {
     width: 36%;
     position: absolute;
     color: rgb(255, 255, 255);
-    right: 56%;
-    top: 10%;
+    right: 50%;
+    top: 30%;
 }
 .title_hero img{
     margin-top: 62px;
@@ -109,8 +119,8 @@ body {
         width: 50%;
         display: flex;
         justify-content: space-between;
-        height: 350px;
-        margin: 2% 14% 2%;
+        flex-wrap: wrap;
+        margin: 2% 14% 0%;
         
     }
     .artc_img .artic{
@@ -120,12 +130,45 @@ body {
         font-size: 16px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-justify: distribute;
+        margin-bottom: 30px;
         
+    }
+    .artc_img .artic h2{
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .artc_img .svg_img{
         width: 20%;
     }
+    .artc_img .eng svg{
+        width: 45rem;
+        height: 19vw;
+    }
+    .svg_car {
+        padding-top: 0%;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 90%;
+        height: 450px;
+    }
+    .svg_car svg{
+        margin-top: 0;
+        padding-top: 0%;
+        height: 17vw;
+        width: 36vw;
+        margin-left: 40px;
+    }
+
+
+.foteer{
+    /* transform: translateX(-20.925rem) skew(35deg);
+    transform-origin: center center; */
+}
 .fott{
+    position: relative;
     width: 100%;
     height: 250px;
     background: url(/img/Groupe\ 35.png);
