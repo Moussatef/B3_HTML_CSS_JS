@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -94,5 +94,41 @@ body{
         background: #0023AC;
     }
     
-
-
+    .images{
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 100px;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .images svg{
+        height: 298px;
+        width: 600px;
+    }
+    .artc_img {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        height: 350px;
+        margin: 2% 14% 2%;
+        
+    }
+    .artc_img .artic{
+        width: 70%;
+    }
+    .artc_img .artic p{
+        font-size: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-justify: distribute;
+        
+    }
+    .artc_img .svg_img{
+        width: 20%;
+    }
+.fott{
+    width: 100%;
+    height: 250px;
+    background: url(/img/Groupe\ 35.png);
+    background-size: cover;
+}
+ 
