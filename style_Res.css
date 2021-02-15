@@ -70,7 +70,7 @@
     transition: 800ms;
 }
 .last {
-    
+    grid-column: 4 / 4;
 }
 .atrubit   #valider:hover{
     color: #ffffff;

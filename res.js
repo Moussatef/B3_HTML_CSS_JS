@@ -2,22 +2,22 @@ let carburant = ["Electrique", "Hybride", "Essence", "Diesel"];
 let boite = ["Manuelle", "Automatique"];
 // var type_V = document.querySelector(".vehicule").value;
 let select_carbu = document.getElementById("carbur");
-let select_boit  = document.getElementById("boit");
-var prix_pors    ;
-var prix_voit    ;
-var pors_carbu   ;
-var pors_boit    ;
+let select_boit = document.getElementById("boit");
+var prix_pors;
+var prix_voit;
+var pors_carbu;
+var pors_boit;
 
 
 function check_type_v() {
     let choix = " <option >-Votre choix-</option>";
-    var veh = document.getElementById("vehicule").value;
-    switch (veh) {
+    var veh = document.getElementById("vehicule");
+    switch (veh.value) {
         case "Motos":
             select_carbu.innerHTML = choix;
-            select_carbu.innerHTML += `<option value="${carburant[0]}">${carburant[0]} </option> <option value="${carburant[2]}">${carburant[2]}</option>"`;
+            select_carbu.innerHTML += `<option value="${carburant[0]}">${carburant[0]} </option> <option value="${carburant[2]}">${carburant[2]}</option>`;
             select_boit.innerHTML = `<option value="None">None</option>`;
-            prix_voit=10;
+            prix_voit = 10;
             break
         case "Citadine":
             select_carbu.innerHTML = choix;
@@ -25,8 +25,7 @@ function check_type_v() {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
             select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
-            prix_voit=12;
-
+            prix_voit = 12;
             break;
         case "Compact":
             select_carbu.innerHTML = choix;
@@ -34,7 +33,7 @@ function check_type_v() {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
             select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
-            prix_voit=14;
+            prix_voit = 14;
             break;
         case "Berline":
             select_carbu.innerHTML = choix;
@@ -42,13 +41,13 @@ function check_type_v() {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
             select_boit.innerHTML = choix + `<option value="${boite[1]}">${boite[1]} </option>`;
-            prix_voit=20;
-            
+            prix_voit = 20;
+
             break;
         case "Utilitare":
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
             select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
-            prix_voit=16;
+            prix_voit = 16;
             break;
         case "Engin":
             select_carbu.innerHTML = choix;
@@ -56,13 +55,12 @@ function check_type_v() {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
             select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
-            prix_voit=900;
+            prix_voit = 900;
             break;
         case "Camion":
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
             select_boit.innerHTML = choix + `<option value="${boite[1]}">${boite[1]} </option>`;
-            
-            prix_voit=250;
+            prix_voit = 250;
             break;
 
         default:
@@ -71,45 +69,45 @@ function check_type_v() {
     }
 }
 
-function check_carbu(){
-     switch(select_carbu.value){
-         case "Electrique" : pors_carbu = 0.05;
-          break;
-         case "Hybride" : pors_carbu = 0.09;
-          break;
-         case "Essence" : pors_carbu = 0.14;
-          break;
-         case "Diesel" : pors_carbu = 0.21; 
-          break;
-         default: pors_carbu = 0;
-     }
+function check_carbu() {
+    switch (select_carbu.value) {
+        case "Electrique": pors_carbu = 0.05;
+            break;
+        case "Hybride": pors_carbu = 0.09;
+            break;
+        case "Essence": pors_carbu = 0.14;
+            break;
+        case "Diesel": pors_carbu = 0.21;
+            break;
+        default: pors_carbu = 0;
+    }
 }
-function check_boit(){
-    switch(select_boit.value){
-        case "Manuelle" : pors_boit = 0;
-        break;
-        case "Automatique" : pors_boit = 0.19;
-        break;
+function check_boit() {
+    switch (select_boit.value) {
+        case "Manuelle": pors_boit = 0;
+            break;
+        case "Automatique": pors_boit = 0.19;
+            break;
         default: pors_boit = 0;
     }
 }
 
-function getduri(){
+function getduri() {
     let date_Dep = document.getElementById("dateDep").value;
     let date_Fin = document.getElementById("dateFin").value;
     let Nom = document.getElementById("Nom").value;
     let email = document.getElementById("email").value;
-    let CIN =document.getElementById("cin").value;
-    let typeca =  document.getElementById("vehicule").value;
+    let CIN = document.getElementById("cin").value;
+    let typeca = document.getElementById("vehicule").value;
     // alert(date_Dep +"     <<<>>>  "+ date_Dep);
     let deffDate = new Date(date_Fin) - new Date(date_Dep);
     let diffInDays = deffDate / (1000 * 60 * 60 * 24);
     // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
     prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
-    alert("Nom Et Prenom : " +Nom+"\nCIN : "+CIN+"\nEmail : "+email);
-    alert("Type du véhicule : "+typeca+"\ncarburant : " +select_carbu.value + "\nboite à vitesse : " + select_boit.value + "\ndurée de réservation (en jours) est :  "+ diffInDays+"\nprix total est :  "+ prix_pors +"€");
+    alert("Nom Et Prenom : " + Nom + "\nCIN : " + CIN + "\nEmail : " + email);
+    alert("Type du véhicule : " + typeca + "\ncarburant : " + select_carbu.value + "\nboite à vitesse : " + select_boit.value + "\ndurée de réservation (en jours) est :  " + diffInDays + "\nprix total est :  " + prix_pors + "€");
 }
 
-select_carbu.addEventListener("change",check_carbu);
-select_boit.addEventListener("change",check_boit);
-document.getElementById("valider").addEventListener("click",getduri);
+select_carbu.addEventListener("change", check_carbu);
+select_boit.addEventListener("change", check_boit);
+document.getElementById("valider").addEventListener("click", getduri);
