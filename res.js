@@ -6,7 +6,7 @@ let select_boit = document.getElementById("boit");
 var prix_pors;
 var prix_voit;
 var pors_carbu;
-var pors_boit;
+var pors_boit =0;
 
 
 function check_type_v() {
@@ -16,7 +16,8 @@ function check_type_v() {
         case "Motos":
             select_carbu.innerHTML = choix;
             select_carbu.innerHTML += `<option value="${carburant[0]}">${carburant[0]} </option> <option value="${carburant[2]}">${carburant[2]}</option>`;
-            select_boit.innerHTML = `<option value="None">None</option>`;
+            select_boit.style.display = `none`;
+            document.getElementById("lb_v").style.display = `none`;
             prix_voit = 10;
             break
         case "Citadine":
@@ -24,7 +25,7 @@ function check_type_v() {
             for (let i = 0; i < 4; i++) {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
-            select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
+            select_boit.innerHTML =  `<option value="${boite[0]}">${boite[0]} </option>`;
             prix_voit = 12;
             break;
         case "Compact":
@@ -32,7 +33,7 @@ function check_type_v() {
             for (let i = 1; i < 4; i++) {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
-            select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
+            select_boit.innerHTML =  `<option value="${boite[0]}">${boite[0]} </option>`;
             prix_voit = 14;
             break;
         case "Berline":
@@ -40,13 +41,13 @@ function check_type_v() {
             for (let i = 1; i < 4; i++) {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
-            select_boit.innerHTML = choix + `<option value="${boite[1]}">${boite[1]} </option>`;
+            select_boit.innerHTML =  `<option value="${boite[1]}">${boite[1]} </option>`;
             prix_voit = 20;
 
             break;
         case "Utilitare":
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
-            select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
+            select_boit.innerHTML = `<option value="${boite[0]}">${boite[0]} </option>`;
             prix_voit = 16;
             break;
         case "Engin":
@@ -54,12 +55,12 @@ function check_type_v() {
             for (let i = 2; i < 4; i++) {
                 select_carbu.innerHTML += `<option value="${carburant[i]}">${carburant[i]} </option>`;
             }
-            select_boit.innerHTML = choix + `<option value="${boite[0]}">${boite[0]} </option>`;
+            select_boit.innerHTML =  `<option value="${boite[0]}">${boite[0]} </option>`;
             prix_voit = 900;
             break;
         case "Camion":
             select_carbu.innerHTML = choix + `<option value="${carburant[3]}">${carburant[3]} </option>`;
-            select_boit.innerHTML = choix + `<option value="${boite[1]}">${boite[1]} </option>`;
+            select_boit.innerHTML = `<option value="${boite[1]}">${boite[1]} </option>`;
             prix_voit = 250;
             break;
 

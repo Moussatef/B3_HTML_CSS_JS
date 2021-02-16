@@ -168,10 +168,38 @@ body {
     transform-origin: center center; */
 }
 .fott{
-    position: relative;
     width: 100%;
     height: 250px;
     background: url(/img/Groupe\ 35.png);
     background-size: cover;
 }
- 
+.fott img{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 35px;
+    height: 45px;
+
+}
+.fott ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+   
+}
+.fott ul li{
+   margin-bottom: 20px;
+   
+}
+.fott  ul li a{
+    color: rgb(255, 255, 255);
+    margin: 40px;
+    text-decoration: none;
+    transition: 800ms;
+}
+
+.fott  p{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 80px;
+    margin-top: 58px;
+}
