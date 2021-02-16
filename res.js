@@ -90,6 +90,7 @@ function check_boit() {
    
 }
 
+
 function getduri() {
     let date_Dep = document.getElementById("dateDep").value;
     let date_Fin = document.getElementById("dateFin").value;
@@ -97,13 +98,22 @@ function getduri() {
     let email = document.getElementById("email").value;
     let CIN = document.getElementById("cin").value;
     let typeca = document.getElementById("vehicule").value;
+    let devProp = document.getElementById("prop");
     // alert(date_Dep +"     <<<>>>  "+ date_Dep);
     let deffDate = new Date(date_Fin) - new Date(date_Dep);
     let diffInDays = deffDate / (1000 * 60 * 60 * 24);
-    // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
-    prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
-    alert("Nom Et Prenom : " + Nom + "\nCIN : " + CIN + "\nEmail : " + email);
-    alert("Type du véhicule : " + typeca + "\ncarburant : " + select_carbu.value + "\nboite à vitesse : " + select_boit.value + "\ndurée de réservation (en jours) est :  " + diffInDays + "\nprix total est :  " + prix_pors + "€");
+    // if (diffInDays > 0) {
+        // alert( diffInDays +"<>"+ prix_voit +"<>"+ pors_carbu +"<>"+ pors_boit);
+        prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
+        devProp.className="prop";
+        
+        
+        alert("Type du véhicule : " + typeca + "\ncarburant : " + select_carbu.value + "\nboite à vitesse : " + select_boit.value + "\ndurée de réservation (en jours) est :  " + diffInDays + "\nprix total est :  " + prix_pors + "€");
+        // devProp.innerHTML = "Nom Et Prenom : " + Nom + "\nCIN : " + CIN + "\nEmail : " + email ;
+
+    // }else
+    // alert("La date de fin doit être postérieure au début");
+
 }
 
 select_carbu.addEventListener("change", check_carbu);
