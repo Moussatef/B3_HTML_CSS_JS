@@ -123,7 +123,14 @@ body {
         -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
      box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
     }
+    .prop p{
+       color: black;
+       text-align: center;
+    }
 
+    .prop1{
+        display: none;
+    }
 
 
 
