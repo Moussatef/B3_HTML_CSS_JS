@@ -23,10 +23,18 @@ function verf_Email() {
     var verif = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$");
     return verif.test(email);
 }
+function verf_msg(){
+    var msg = document.getElementById("msg").value;
+    if(msg.length > 10)
+    return true;
+    else 
+    return false;
+
+}
+
 function chick_inp() {
     if (verf_Nom())
         document.getElementById("Nom").style.borderColor = "#1ad37693";
-
     else
         document.getElementById("Nom").style.borderColor = "#ee2c09";
 
@@ -39,6 +47,12 @@ function chick_inp() {
         document.getElementById("tele").style.borderColor = "#1ad37693";
     else
         document.getElementById("tele").style.borderColor = "#ee2c09";
+
+    if (verf_msg())
+        document.getElementById("msg").style.borderColor = "#1ad37693";
+    else
+        document.getElementById("msg").style.borderColor = "#ee2c09";
+
 
 }
 
