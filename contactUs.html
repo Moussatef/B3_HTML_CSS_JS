@@ -12,7 +12,7 @@
         <div class="nav_1">
             <a href=""><img src="/logo/logo.png" alt=""></a>
             <ul>
-                <li class="title"><a style="color: #017FE8; text-decoration: underline;"href="">Accueil</a> </li>
+                <li class="title"><a style="color: #017FE8; text-decoration: underline;"href="accueil.html">Accueil</a> </li>
                 <li class="title"><a href="">Gallerie</a></li>
                 <li class="title ress"><a href="reservation.html">Réservation </a></li>
                 <li class="title"><a href="contactUs.html">Contact</a></li>
@@ -47,30 +47,40 @@
 
 
     <div class="cards_contact">
+        <div class="inner_map">
+
+        </div>
 
         <div class="inner_inputs">
             <div class="atrubit">
                 <label>Nom Et Prenom : </label>
             </div>
             <div class="atrubit">
-                <input id="Nom" type="text" placeholder="Nom Et Prenom">
+                <input id="Nom" type="text" value=""   placeholder="Nom Et Prenom">
             </div>
             <div class="atrubit">
-                <label> Idantitie National : </label>
+                <label> Telephone : </label>
             </div>
             <div class="atrubit">
-                <input type="text" id="cin" placeholder="CIN">
+                <input type="text" id="tele" value="" placeholder="Telephone">
             </div>
             <div class="atrubit">
                 <label>Email : </label>
             </div>
             <div class="atrubit">
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="email" value="" placeholder="Email">
             </div>
+            <div class="atrubit">
+                <textarea name="Message"  id="msg" value="" placeholder="Votre Message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="atrubit">
+             <input type="button" value="Envoyer" id="btn" class="btn_rm reser" >
+            </div>
+
 
         </div>
     </div>
-    
+  <script src="contactjs.js"></script>
 
 
 

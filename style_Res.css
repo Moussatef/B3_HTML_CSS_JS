@@ -113,7 +113,7 @@ body{
     .btn_rm:hover{
         transition: 500ms;
         background: rgb(238, 238, 238);
-        border: solid #017FE8 2px;
+        border: solid #0023AC 2px;
         color: rgb(0, 0, 0);
     }
     .reser{
@@ -122,7 +122,7 @@ body{
     
     .prop {
         width: 60%;
-        height: 400px;
+        height: 500px;
         background-color: #ffffff;
         position: absolute;
         top: 125%;
@@ -132,6 +132,7 @@ body{
         box-shadow: 25px 20px 20px 40px rgba(216, 216, 216, 0.61);
     }
     .prop p{
+       margin-top: 80px;
        color: black;
        text-align: center;
     }
@@ -179,28 +180,30 @@ body{
 }
 
 .atrubit  input , .atrubit  select{
-    height: 28px;
-    width: 200px;
-    border-style: hidden;
-    border-bottom: solid 1px #707070;
-    border-left: solid 1px #707070;
+    width: 250px;
+    height: 36px;
+    border-radius: 18px;
+    /* margin: 20px auto; */
+    
+    color: rgba(51, 51, 51, 0.829);
+    transition: 0.25s;
+    border: 2px solid #717475bb;
+    outline: none;
     -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
-    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+     box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
 
 }
 .atrubit label{
     font-size: 18px;
 }
 .atrubit input[type=text]:focus , .atrubit input[type=email]:focus {
-    border:solid 1px #39A5FF;
-    background: rgb(255, 255, 255);
-    transition: 800ms;
-    width: 220px;
+    width: 280px;
+    border-color: #017FE8;
 }
 
 .atrubit   #valider{
     color: #000000;
-    border:solid 1.3px rgb(4, 96, 235);
+    border:solid 1.3px #0023AC;
     background: rgb(255, 255, 255);
     height: 33px;
     width: 160px;
@@ -212,7 +215,7 @@ body{
 .atrubit   #valider:hover{
     color: #ffffff;
     border:solid 1.3px rgb(0, 0, 0);
-    background: #39A5FF;
+    background: #0023AC;
     transition: 800ms;
     width: 180px;
 }

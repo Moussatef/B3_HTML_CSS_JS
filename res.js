@@ -112,9 +112,13 @@ function getduri() {
     document.getElementById("btn_ok").style.display="block";
     let deffDate = new Date(date_Fin) - new Date(date_Dep);
     let diffInDays = deffDate / (1000 * 60 * 60 * 24);
-    prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
-    propt1.className="prop";
-    propt2.innerHTML = "<p> Nom Et Prenom :  " + Nom + " <br/>CIN : " + CIN + "<br/>  Email : " + email+"<br/> Type du véhicule : " + typeca + "<br/> carburant : " + select_carbu.value + "<br/> boite à vitesse : " + select_boit.value + " <br/>durée de réservation (en jours) est :  " + diffInDays + "<br/>prix total est :  " + prix_pors + "€ <p> "
+    if(diffInDays>=0){
+        prix_pors = diffInDays * (prix_voit + (prix_voit * pors_carbu) + (prix_voit * pors_boit));
+        propt1.className="prop";
+        propt2.innerHTML = "<p> Nom Et Prenom :  " + Nom.value + " <br/>CIN : " + CIN + "<br/>  Email : " + email+"<br/> Type du véhicule : " + typeca + "<br/> carburant : " + select_carbu.value + "<br/> boite à vitesse : " + select_boit.value + " <br/>durée de réservation (en jours) est :  " + diffInDays + "<br/>prix total est :  " + prix_pors + "€ <p> "
+    
+    }else
+    alert("Errer in Date saisir !!!");
     
 }
 function ok(){
