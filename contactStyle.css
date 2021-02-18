@@ -117,7 +117,36 @@ body{
         background: #0023AC;
     }
 
+.cards_contact{
+        width: 60%;
+        height: 400px;
+        background-color: #fff;
+        top: 125%;
+        left: 20%;
+        overflow: hidden;
+        -webkit-box-shadow: 20px 20px 20px 20px rgba(173, 173, 173, 0.61); 
+        box-shadow: 25px 20px 20px 40px rgba(216, 216, 216, 0.61);
+}
+.atrubit  input {
+    text-align: center;
+    height: 28px;
+    width: 200px;
+    border-style: hidden;
+    border-bottom: solid 1px #707070;
+    border-left: solid 1px #707070;
+    -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
+    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
 
+}
+.atrubit label{
+    font-size: 18px;
+}
+.atrubit input[type=text]:focus , .atrubit input[type=email]:focus {
+    border:solid 1px #39A5FF;
+    background: rgb(255, 255, 255);
+    transition: 800ms;
+    width: 220px;
+}
 
 
 

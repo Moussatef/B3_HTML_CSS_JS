@@ -128,8 +128,8 @@ body{
         top: 125%;
         left: 20%;
         overflow: hidden;
-        -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
-        box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+        -webkit-box-shadow: 20px 20px 20px 20px rgba(173, 173, 173, 0.61); 
+        box-shadow: 25px 20px 20px 40px rgba(216, 216, 216, 0.61);
     }
     .prop p{
        color: black;
@@ -146,8 +146,8 @@ body{
     padding: 20px;
     margin: 8% auto 8%;
     border: solid 1px #e9e9e9;
-    -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
-    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+    -webkit-box-shadow: 20px 20px 20px 20px rgba(173, 173, 173, 0.61); 
+        box-shadow: 25px 20px 20px 20px rgba(216, 216, 216, 0.61);
 }
 .atrubit{
     width: 250px;
@@ -167,8 +167,8 @@ body{
         padding: 20px;
         margin: 8% auto 0;
         border: solid 1px #707070;
-        -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
-        box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+        -webkit-box-shadow: 20px 20px 20px 20px rgba(173, 173, 173, 0.61); 
+        box-shadow: 25px 20px 20px 20px rgba(216, 216, 216, 0.61);
     }
     .atrubit{
         width: 350px;
@@ -182,7 +182,6 @@ body{
     height: 28px;
     width: 200px;
     border-style: hidden;
-    
     border-bottom: solid 1px #707070;
     border-left: solid 1px #707070;
     -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
