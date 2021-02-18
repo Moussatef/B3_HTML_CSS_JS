@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .card{
+            width: 10%;
+            margin:15% auto 2%;
+        }
+        .card input{
+            margin: 20px;
+            border: solid 1.5px darkcyan;
+            border-radius: 15px;
+            width: 150px;
+            height: 30px;
+            
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="cr">
+        <div class="atrubit">
+            <label>Nom Et Prenom : </label>
+        </div>
+        <div class="atrubit">
+    
+            <input id="num" type="number" value="" placeholder="" max="5" min="1">
+        </div>
+        <div class="atrubit">
+            <label> Idantitie National : </label>
+        </div>
+        <div class="atrubit">
+            <input type="text" id="cin" value="" placeholder="CIN">
+        </div>
+        <div class="atrubit"><label>Email : </label></div>
+        <div class="atrubit">
+            <input type="email" id="email"  value="" placeholder="Email">
+        </div>
+        <div class="atrubit">
+            <input type="button" id="btn" onclick="check_Inputs()" value="OK">
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("cr").className = "card";
+        document.querySelector("body").innerHTML += "<p>i'm coding know in java script Yooopy";
+        document.querySelector("p").style.fontSize= "30px";
+        document.querySelector("p").style.textAlign= "center";
+        var cin = document.getElementById("cin");
+        
+        function check_Inputs(){
+            // var name = document.querySelector("#Nom");
+            // alert(name.value);
+            var x = document.querySelectorAll("label");
+        var n  = document.getElementById("num").value;
+        
+        /* for(var i = 0 ;i< x.length;i++ ) 
+                console.log(x[i]); */
+        switch(n)
+        {
+            case 1 :
+            Array.from(x).forEach(function(item){
+            console.log(item);
+        });
+              
+            break;
+            case 2 : 
+            console.log("bonjour tout le monde");
+            break;
+            case 3: 
+            if(cin.value == ""){
+                console.log("cin no valid");
+                cin.style.border="solid 1px red";
+            }
+            else{
+                
+                console.log("votre est : "+cin.value);
+                cin.style.border="solid 1px green";
+
+            }
+            
+
+
+        }
+        }
+       
+        // document.querySelector("#btn").addEventListener("click",check_Inputs)
+        
+
+    </script>
+</body>
+</html>

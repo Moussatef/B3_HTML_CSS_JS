@@ -1,0 +1,11 @@
+display: block !important;
+position: absolute;
+overflow: hidden;
+text-align: left;
+background-color: #181818;
+z-index: 1;
+width: 100%;
+top: 100%;
+height: 0;
+transform: translateY(-100%);
+transition: transform .3s ease-out,height .5s ease-out;

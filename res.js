@@ -17,7 +17,7 @@ var prix_pors;
 var prix_voit;
 var pors_carbu;
 var pors_boit =0;
-document.getElementById("btn_ok").style.display="none"
+document.getElementById("btn_ok").style.display="none";
 
 
 function check_type_v() {
@@ -27,8 +27,6 @@ function check_type_v() {
         case "Motos":
             select_carbu.innerHTML = choix;
             select_carbu.innerHTML += `<option value="${carburant[0]}">${carburant[0]} </option> <option value="${carburant[2]}">${carburant[2]}</option>`;
-            select_boit.style.display = `none`;
-            document.getElementById("lb_v").style.display = `none`;
             prix_voit = 10;
             break
         case "Citadine":
