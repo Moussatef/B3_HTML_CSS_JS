@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
-
 @import url(font-awesome.min.css);
-
-
-
-
-
 
 body{
     margin: 0;
@@ -15,8 +8,6 @@ body{
     font-family: 'poppins', sans-serif;
     
 }
-
-
 .nav_bar_div .nav_1{
     padding-left: 10%;
     position: fixed;
@@ -36,6 +27,7 @@ body{
 }
 .nav_1 ul li .active a{
     color: #017FE8;
+
 }
 
 .nav_1 ul li a{
@@ -63,8 +55,9 @@ body{
     padding-bottom: 3px;
     transition: 800ms;
 }
-.nav_1  img{
-    margin-top: 20px;
+.header  img{
+    margin-top: 10px;
+    margin-left: 50px;
     position: absolute;
     width: 35px;
     height: 45px;
@@ -105,6 +98,8 @@ body{
     text-decoration: none;
     transition: 800ms;
     }
+
+    
     .btn_rm:hover{
         transition: 500ms;
         background: rgb(238, 238, 238);
@@ -114,111 +109,53 @@ body{
     .reser{
         background: #0023AC;
     }
-    
-    .images{
-        position: relative;
-        padding-left: 40px;
-        margin-bottom: 100px;
-        max-width: 100%;
-        z-index: 1;
-    }
-    .images svg{
-        height: 298px;
-        width: 600px;
-    }
-    .artc_img {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 2% 14% 0%;
-        
-    }
-    .artc_img .artic{
-        width: 70%;
-    }
-    .artc_img .artic p{
-        font-size: 16px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-justify: distribute;
-        margin-bottom: 30px;
-        
-    }
-    .artc_img .artic h2{
-        margin-bottom: 30px;
-        font-size: 28px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    .artc_img .svg_img{
-        width: 20%;
-    }
-    .artc_img .eng svg{
-        width: 45rem;
-        height: 19vw;
-    }
-    .svg_car {
-        padding-top: 0%;
-        margin-top: 0;
+
+.cards_contact{
+        width: 60%;
+        margin: 2% 20% 2%;
+        background-color: #fff;
+        top: 125%;
+        left: 20%;
+        overflow: hidden;
+        -webkit-box-shadow: 20px 20px 20px 20px rgba(173, 173, 173, 0.61); 
+        box-shadow: 25px 20px 20px 40px rgba(216, 216, 216, 0.61);
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
-        width: 90%;
-        height: 450px;
-    }
-    .svg_car svg{
-        margin-top: 0;
-        padding-top: 0%;
-        height: 17vw;
-        width: 36vw;
-        margin-left: 40px;
-    }
-
-
-.foteer{
-    /* transform: translateX(-20.925rem) skew(35deg);
-    transform-origin: center center; */
-    display: flex;
-    background: url(img/Groupe\ 35.png);
-    background-size: cover;
-    width: 100%;
+        justify-content: space-around;
 }
-.fott{
-    width: 100%;
-    height: 250px;
+.cards_contact .mapG{
+    margin-top: 9%;
+}
+.inner_inputs{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    width: 350px;
+}
+.atrubit{
+    margin: 20px;
+}
+.atrubit  input ,.atrubit textarea {
+    border-radius: 18px;
+            padding: 14px 10px;
+            margin: 20px auto;
+            width: 300px;
+            color: rgba(51, 51, 51, 0.829);
+            transition: 0.25s;
+            border: 2px solid #717475bb;
+            outline: none;
+    -webkit-box-shadow: 15px 10px 16px -2px rgba(173, 173, 173, 0.61); 
+    box-shadow: 15px 10px 16px -2px rgba(216, 216, 216, 0.61);
+
+}
+.atrubit label{
+    font-size: 18px;
+}
+.atrubit input[type=text]:focus , .atrubit input[type=email]:focus,.atrubit textarea:focus  {
+    width: 350px;
+    border-color: #017FE8;
+}
+
+
+
     
-}
-.fott img{
-    margin-left: 70px;
-    margin-top: 20px;
-    width: 35px;
-    height: 45px;
 
-}
-.fott ul{
-    display: flex;
-    list-style: none;
-    position: relative;
-   
-}
-.fott ul li{
-   margin-bottom: 20px;
-   
-}
-.fott  ul li a{
-    color: rgb(255, 255, 255);
-    margin: 40px;
-    text-decoration: none;
-    transition: 800ms;
-    font-size: 20px;
-}
-
-.fott  p{
-    font-size: 16px;
-    color: #fff;
-    margin-left: 80px;
-    margin-top: 58px;
-}
-.foteer .icons{
-    margin-top: 20px;
-    margin-right: 50px;
-}

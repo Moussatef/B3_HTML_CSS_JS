@@ -1,0 +1,61 @@
+
+    .images{
+        position: relative;
+        padding-left: 10%;
+        margin-bottom: 100px;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .images svg{
+        height: 60%;
+        width: 30%;
+    }
+    .artc_img {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2% 18% 0%;
+    }
+    .artc_img .artic{
+        width: 500px;
+    }
+
+    .artc_img .artic p{
+        font-size: 16px;
+        text-justify: distribute;
+        margin-bottom: 30px;
+    }
+    .artc_img .artic h2{
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .artc_img .svg_img{
+        width: 50%;
+
+    }
+    .artc_img .svg_img img{
+        height: 100%;
+        width: 100%;
+    }
+    .artc_img .eng svg{
+        width: 100%;
+        height: 50%;
+    }
+    .svg_car {
+        padding-top: 0%;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 100%;
+    }
+    .svg_car img{
+        margin-top: 0;
+        padding-top: 0%;
+        height: 30%;
+        width: 30%;
+        margin-left: 40px;
+    }
+
+
