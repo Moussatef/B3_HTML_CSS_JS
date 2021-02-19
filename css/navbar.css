@@ -234,7 +234,7 @@ body{
     }
 	
 
-@media only screen and (max-width:1440px)and (min-width:852px){
+@media only screen and (max-width : 768px){
 
 
 	.title_hero{
@@ -259,6 +259,9 @@ body{
 	.title_hero p{
 		font-size: 17px;
 	}
+
+	
+
 
 }
 @media only screen and (max-width:850px)and (min-width:450px){
@@ -308,6 +311,7 @@ body{
 		display: none;
 	}
 
+
 }
 
 /* 48em = 768px */
@@ -331,54 +335,63 @@ body{
 
 
 /* footer */
-
-.foteer{
-	/* transform: translateX(-20.925rem) skew(35deg);
-	transform-origin: center center; */
+.footer {
 	display: flex;
-	background: black;
-	background-size: cover;
-	width: 100%;
-}
-.fott{
-	width: 100%;
-	height: 250px;
-	background: black;
-	
-}
-.fott img{
-	margin-left: 70px;
-	margin-top: 20px;
-	width: 35px;
-	height: 45px;
-
-}
-.fott ul{
-	display: flex;
-	list-style: none;
-	position: relative;
-   
-}
-.fott ul li{
-   margin-bottom: 20px;
-   
-}
-.fott  ul li a{
-	color: rgb(255, 255, 255);
-	margin: 40px;
-	text-decoration: none;
-	transition: 800ms;
-	font-size: 20px;
-}
-
-.fott  p{
-	font-size: 16px;
+	flex-flow: row wrap;
 	color: #fff;
-	margin-left: 80px;
-	margin-top: 58px;
+	background-color: #000000;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-.foteer .icons{
-	background: black;
-	margin-top: 20px;
-	margin-right: 50px;
+.footer-section {
+	width: 22%;
+	padding-left: 30px;
+	padding-top: 30px;
+	position: relative;
 }
+.footer-section p {
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.footer-section h2 {
+	font-weight: 600;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#logo-footer {
+	width: 30%;
+}
+.footer2 {
+	position: relative;
+	top: 65px;
+}
+.footer3 {
+	position: relative;
+	top: 65px;
+}
+.footer4 {
+	position: relative;
+	top: 65px;
+}
+.footer ul {
+	list-style: none;
+}
+.footer a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.footer-bottom {
+	background-color: #000000;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.box li a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+.socials {
+	padding: 5px;
+}
+/* footer end */
