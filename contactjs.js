@@ -2,6 +2,7 @@
 var nom = document.getElementById("Nom");
 
 
+
 function verf_Nom() {
  
     alert(nom.value.length);
@@ -9,9 +10,9 @@ function verf_Nom() {
         return true;
     } else {
         return false;
-
     }
 }
+
 function verf_Tele() {
     var tele = document.getElementById("tele").value;
     var verf = new RegExp("^0[6]([-. ]?[0-9]{2}){4}$");
@@ -33,27 +34,47 @@ function verf_msg(){
 }
 
 function chick_inp() {
-    if (verf_Nom())
+    var err = "";
+    if (verf_Nom()){
         document.getElementById("Nom").style.borderColor = "#1ad37693";
-    else
+
+    }
+        
+    else{
         document.getElementById("Nom").style.borderColor = "#ee2c09";
+        err += "Votre Nom insuffisant \n";
+    }
+        
 
     if (verf_Email())
         document.getElementById("email").style.borderColor = "#1ad37693";
-    else
+    else{
         document.getElementById("email").style.borderColor = "#ee2c09";
+        err += "Votre Email pas correct \n";
+    }
+        
 
     if (verf_Tele())
         document.getElementById("tele").style.borderColor = "#1ad37693";
-    else
+    else{
         document.getElementById("tele").style.borderColor = "#ee2c09";
+        err += "Votre Telephone pas correct \n";
+    }
+        
 
     if (verf_msg())
         document.getElementById("msg").style.borderColor = "#1ad37693";
-    else
+    else{
         document.getElementById("msg").style.borderColor = "#ee2c09";
+        err += "Votre Message insuffisant \n";
 
-
+    }
+    if(err.length>0)
+    alert(err);
+    else{
+        
+    }
+    
 }
 
 document.getElementById("btn").addEventListener("click", chick_inp);

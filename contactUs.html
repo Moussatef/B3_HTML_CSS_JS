@@ -12,10 +12,10 @@
         <div class="nav_1">
             <a href=""><img src="/logo/logo.png" alt=""></a>
             <ul>
-                <li class="title"><a style="color: #017FE8; text-decoration: underline;"href="accueil.html">Accueil</a> </li>
+                <li class="title"><a href="accueil.html">Accueil</a> </li>
                 <li class="title"><a href="">Gallerie</a></li>
                 <li class="title ress"><a href="reservation.html">Réservation </a></li>
-                <li class="title"><a href="contactUs.html">Contact</a></li>
+                <li class="title"><a style="color: #017FE8; " href="contactUs.html">Contact</a></li>
             </ul>
         </div>
 
@@ -47,10 +47,26 @@
 
 
     <div class="cards_contact">
-        <div class="inner_map">
-
-        </div>
-
+        <div class="mapG">
+            <h1><span style="color: #017FE8;">OUR</span>  LOCATION</h1>
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+               <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+               <script>(function () {
+                     var setting = { "height": 490, "width": 590, "zoom": 17, "queryString": "Premium Models, Rue de Choiseul, Paris, France", "place_id": "ChIJrwgJXzpu5kcRB25j4-TLUuA", "satellite": false, "centerCoord": [48.869086268184134, 2.3358978999999813], "cid": "0xe052cbe4e3636e07", "lang": "fr", "cityUrl": "/france/paris", "cityAnchorText": "Carte de Paris, Ile de France, France", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "392269" };
+                     var d = document;
+                     var s = d.createElement('script');
+                     s.src = 'https://1map.com/js/script-for-user.js?embed_id=392269';
+                     s.async = true;
+                     s.onload = function (e) {
+                        window.OneMap.initMap(setting)
+                     };
+                     var to = d.getElementsByTagName('script')[0];
+                     to.parentNode.insertBefore(s, to);
+                  })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+            </div>
+         
+         </div>
+      
         <div class="inner_inputs">
             <div class="atrubit">
                 <label>Nom Et Prenom : </label>
@@ -74,10 +90,8 @@
                 <textarea name="Message"  id="msg" value="" placeholder="Votre Message" cols="30" rows="10"></textarea>
             </div>
             <div class="atrubit">
-             <input type="button" value="Envoyer" id="btn" class="btn_rm reser" >
+             <input type="button" style="color: rgb(255, 255, 255);" value="Envoyer" id="btn" class="btn_rm reser" >
             </div>
-
-
         </div>
     </div>
   <script src="contactjs.js"></script>
