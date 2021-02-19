@@ -178,7 +178,7 @@ body{
     /* transform: translateX(-20.925rem) skew(35deg);
     transform-origin: center center; */
     display: flex;
-    background: url(/img/Groupe\ 35.png);
+    background: url(img/Groupe\ 35.png);
     background-size: cover;
     width: 100%;
 }
