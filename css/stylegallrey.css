@@ -24,7 +24,6 @@
     /* height: 100px; */
     /* margin: 2% 20% 10%; */
     overflow: hidden;
-
 }
  
 .mor_art {
@@ -51,7 +50,7 @@
 .mor_art .m_art1 img{
     
     width:15rem;
-    height: 200px;
+    height: 15rem;
 }
 @keyframes morebook {
     from{
