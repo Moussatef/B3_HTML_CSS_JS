@@ -16,13 +16,15 @@
 
 }
 .contant_books{
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin:20px 50px ;
+    margin:20px 0px ;
+    background: url(/img/Groupe\ 8.png);
 }
 .contant_books .card{
-    
+    background: rgb(139, 139, 139);
     justify-content: center;
     align-items: center;
     width: 16rem;
@@ -34,7 +36,7 @@
     transition: 500ms;
     width: 100%;
     height: 10rem;
-    filter:contrast(50%);
+    filter:contrast(80%);
     background-size: cover;
     overflow: hidden;
 }
@@ -56,8 +58,11 @@ margin-left: 0.5rem;
 margin-bottom: 0.5rem;
 color: #141012;
 }
+.star{
+    margin-left: 10px;
+}
 .d-btn a{
-    width: 150px;
+    width: 120px;
     font-size: 12px;
     padding: 10px 0px;
     background-color: #064cf0;
@@ -67,7 +72,7 @@ color: #141012;
     line-height: 20px;
     border-radius: 30px;
     text-align: center;
-    margin: 5px 20% 5px;
+    margin: 2px 20% 5px;
     }
     .d-btn a:hover {
     background: #000000;
