@@ -1,4 +1,61 @@
 
+
+.our_gr{
+    background: url(/images/Rectangle\ 1865.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10px;
+}
+.our_gr h2{
+    padding-top: 17px;
+
+}
+.contant_books{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 50px ;
+}
+.contant_books .card{
+    width: 16rem;
+    margin: 2rem;
+    border: solid #383838 1.4px;
+
+}
+
+
+
+.contant_books .card .image_bk{
+    transition: 500ms;
+    width: 100%;
+    height: 10rem;
+    filter:contrast(50%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contant_books .card .image_bk:hover{
+    transition: 600ms;
+    filter:contrast(100%);
+}
+.contant_books .card .image_bk img{
+    width: 260px;
+}
+.contant_books .card h3{
+    text-align: center;
+}
+.contant_books .card p{
+font-size: 17;
+text-align: left;
+margin-left: 0.5rem;
+margin-bottom: 0.5rem;
+color: #141012;
+}
+
+
 .d-btn a{
     width: 150px;
     font-size: 12px;
@@ -49,8 +106,8 @@
 
 .mor_art .m_art1 img{
     
-    width:15rem;
-    height: 15rem;
+    width:10rem;
+    height: 10rem;
 }
 @keyframes morebook {
     from{
