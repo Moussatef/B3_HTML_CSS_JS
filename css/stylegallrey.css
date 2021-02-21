@@ -23,6 +23,13 @@
     margin:20px 0px ;
     background: url(/img/Groupe\ 8.png);
 }
+/* .contant_books .all_cards{
+    width: 80rem;
+    display: flex;
+    overflow: hidden;
+    
+} */
+
 .contant_books .card{
     background: rgb(139, 139, 139);
     justify-content: center;
@@ -30,6 +37,7 @@
     width: 16rem;
     margin: 2rem;
     border: solid #383838 1.4px;
+    
 
 }
 .contant_books .card .image_bk{
@@ -117,7 +125,7 @@ color: #141012;
     }
     to{
         transform: scale(1.18);
-        transform: translateX(-1200px);
+        transform: translateX(-1700px);
         
     }
 }
