@@ -1,7 +1,7 @@
 
     .images{
         position: relative;
-        padding-left: 5%;
+        /* padding-left: 2%; */
         margin-bottom: 100px;
         max-width: 100%;
         z-index: 1;
@@ -9,10 +9,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .images svg{
-        height: 60%;
-        width: 30%;
-    }
+   
     .artc_img {
         width: 80%;
         display: flex;

@@ -22,6 +22,8 @@
     flex-wrap: wrap;
     margin:20px 0px ;
     background: url(/img/Groupe\ 8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* .contant_books .all_cards{
     width: 80rem;
