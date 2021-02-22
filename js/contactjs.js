@@ -5,7 +5,6 @@ var nom = document.getElementById("Nom");
 
 function verf_Nom() {
  
-    alert(nom.value.length);
     if (nom.value.length > 3) {
         return true;
     } else {
@@ -72,7 +71,8 @@ function chick_inp() {
     if(err.length>0)
     alert(err);
     else{
-        
+        alert("Your name : "+document.getElementById("Nom").value+"\nYour phone is : "+document.getElementById("tele").value+"\nYour Email is : "+document.getElementById("email").value+"\nYour Message is : "+document.getElementById("msg").value);
+
     }
     
 }
