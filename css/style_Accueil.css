@@ -35,7 +35,7 @@
     }
     .artc_img .svg_img img{
         height: 450px;
-        width: 650px;
+        width: 100%;
     }
     .artc_img .eng{
         width: 600px;
@@ -49,8 +49,8 @@
     @media only screen and (max-width : 768px){
 
         .artc_img .svg_img img{
-            height: 220px;
-            width: 330px;
+            height: 130px;
+            width: 195px;
         }
     }
 
