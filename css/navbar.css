@@ -128,6 +128,27 @@ body{
 	max-height: 240px;
 }
 
+/* 48em = 768px */
+
+@media screen and (min-width: 768px) {
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 20px 30px;
+	}
+	.header .menu {
+		clear: none;
+		float: left;
+		margin-left: 8%;
+		max-height: none;
+	}
+	.header .menu-icon {
+		display: none;
+	}
+}
+
+
 
 /* hero parte */
 
@@ -262,6 +283,7 @@ body{
 
 
 }
+
 @media only screen and (max-width:900px){
 	.nav_bar_div .nav_1{
 		padding-left: 2%;
@@ -310,26 +332,6 @@ body{
 	}
 
 
-}
-
-/* 48em = 768px */
-
-@media screen and (min-width: 768px) {
-	.header li {
-		float: left;
-	}
-	.header li a {
-		padding: 20px 30px;
-	}
-	.header .menu {
-		clear: none;
-		float: left;
-		margin-left: 8%;
-		max-height: none;
-	}
-	.header .menu-icon {
-		display: none;
-	}
 }
 @media (max-width: 500px){
 	.title_hero p{
