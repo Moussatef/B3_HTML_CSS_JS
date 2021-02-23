@@ -214,6 +214,7 @@ body{
     right: 50%;
     top: 30%;
 }
+
 .title_hero img{
     margin-top: 62px;
     margin-right: 20px;
@@ -229,7 +230,8 @@ body{
 .title_hero p{
     font-size: 24px;
 }
- .btns .btn_rm{
+ .btn_rm{
+	cursor: pointer;
 	background: #0023AC;
     color: #fff;
     padding: 15px 60px 15px 60px;
@@ -238,15 +240,16 @@ body{
     font-weight: 400;
     border: solid #fff 2px;
     border-radius: 30px;
-    margin: 63px 10px 60px 0px;
+    /* margin: 63px 10px 60px 0px; */
     text-decoration: none;
     transition: 800ms;
     }
+	
 	.atrubit .reser{
 		color: #fff;
         background: #0023AC;
     }
-    .btns .btn_rm:hover , .atrubit .reser:hover{
+    .btn_rm:hover , .atrubit .reser:hover{
         transition: 500ms;
         background: rgb(238, 238, 238);
         border: solid #017FE8 2px;
